@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+            <th>Joined Date</th>
+        </tr>
+        {% for x in mymembers %}
+        <tr>
+            <td>{{ x.name }}</td>
+            <td>{{ x.email }}</td>
+            <td>{{ x.phone }}</td>
+            <td>{{ x.joined_date }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <p><a href="{% url 'main' %}">Return to Home</a></p>
+    
+</body>
+</html>

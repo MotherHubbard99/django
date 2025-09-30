@@ -1,0 +1,38 @@
+body {
+    background-color: rgb(37, 36, 36);
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 15px;
+}
+
+a {
+    color:  greenyellow;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+header {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+    border-bottom: 2px solid greenyellow;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+h2 {
+    color: orange
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}

@@ -1,0 +1,18 @@
+{% extends "master.html" %} {% block title %}Spooky Members{% endblock %} 
+{% block content %}
+<p><a href="{% url 'main' %}">Home</a></p>
+
+<h2>Members</h2>
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Joined Date</th>
+  </tr>
+  {% for x in mymembers %}
+  <tr>
+    <td><a href="details/{{x.id}}">{{x.name}}</a></td>
+    <td>{{ x.joined_date }}</td>
+  </tr>
+  {% endfor %}
+</table>
+{% endblock %}
