@@ -26,9 +26,9 @@ SECRET_KEY = 'django-insecure-=v%90zr%)ash*0!%a+u$8z*$d7wc61&(zb9tw+7py3_yt9o40y
 DEBUG = True
 #DEBUG = False
 
-#ALLOWED_HOSTS = []
+ALLOWED_HOSTS = []
 #replace with mydomain.com when deploying
-ALLOWED_HOSTS = ['angiewheeler99.pythonanywhere.com']
+#ALLOWED_HOSTS = ['angiewheeler99.pythonanywhere.com']
 
 # Application definition
 
@@ -78,17 +78,17 @@ WSGI_APPLICATION = 'mydjangoproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-#DATABASES = {
- #   'default': {
- #       'ENGINE': 'django.db.backends.sqlite3',
- #       'NAME': BASE_DIR / 'db.sqlite3',
- #  }
-#}
-import dj_database_url
-
 DATABASES = {
-    'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+   }
 }
+#import dj_database_url
+
+#DATABASES = {
+ #   'default': dj_database_url.config(default='sqlite:///db.sqlite3')
+#}
 
 
 
